@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Geometry Jenious</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <main>
+      <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3">
+        <div class="card bg-base-100 w-96 shadow-xl">
+          <figure class="px-10 pt-10">
+            <img src="img/triangel.jpeg" alt="Shoes" class="rounded-xl" />
+          </figure>
+          <div class="card-body">
+            <h2 class="text-center text-2xl font-bold">Area Calculate</h2>
+            <p class="text-center">Area = 0.5 X b X h</p>
+            <div class="flex pt-2 mx-auto">
+              <input
+                id="triangel-base"
+                class="bg-gray-200 w-20 p-2 rounded-md"
+                type="text"
+                placeholder="b"
+              />
+              <span class="ml-2 mr-4 pt-2">Cm</span>
+              <input
+                id="triangle-height"
+                class="bg-gray-200 w-20 p-2 rounded-md"
+                type="text"
+                placeholder="h"
+              />
+              <span class="ml-2 mr-4 pt-2">Cm</span>
+            </div>
+            <div>
+              <p class="text-xl pl-8 font-semibold">
+                Area:
+                <span id="triangle-area"></span><span>cm<sup>2</sup></span>
+              </p>
+            </div>
+            <div class="card-actions mt-3">
+              <button
+                onclick="triangelCalculateArea()"
+                class="w-full btn btn-primary"
+              >
+                Calculate
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="card bg-base-100 w-96 shadow-xl">
+          <figure class="px-10 pt-10">
+            <img src="img/ractangel.png" alt="Shoes" class="rounded-xl" />
+          </figure>
+          <div class="card-body">
+            <h2 class="text-center text-2xl font-bold">Area Calculate</h2>
+            <p class="text-center">Area (A): w X l</p>
+            <div class="flex pt-2 mx-auto">
+              <input
+                id="ractangel-width"
+                class="bg-gray-200 w-20 p-2 rounded-md"
+                type="text"
+                placeholder="w"
+              />
+              <span class="ml-2 mr-4 pt-2">Cm</span>
+              <input
+                id="ractangel-length"
+                class="bg-gray-200 w-20 p-2 rounded-md"
+                type="text"
+                placeholder="l"
+              />
+              <span class="ml-2 mr-4 pt-2">Cm</span>
+            </div>
+            <div>
+              <p class="text-xl font-semibold">
+                Area: <span id="ractangle-area"></span><span>cm</span
+                ><sup>2</sup>
+              </p>
+            </div>
+            <div class="card-actions mt-3">
+              <button
+                onclick="ractangleCalculateArea()"
+                class="w-full btn btn-primary"
+              >
+                Calculate
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="card bg-base-100 w-96 shadow-xl">
+          <figure class="px-10 pt-10">
+            <img
+              src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
+              alt="Shoes"
+              class="rounded-xl"
+            />
+          </figure>
+          <div class="card-body items-center text-center">
+            <h2 class="card-title">Area Calculate</h2>
+            <p>If a dog chews shoes whose shoes does he choose?</p>
+            <div class="card-actions">
+              <button class="btn btn-primary">Buy Now</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="js/triangel.js"></script>
+  </body>
+</html>
